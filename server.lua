@@ -28,4 +28,5 @@ AddEventHandler(Config.login, function (source)
 
     local playerPed = GetPlayerPed(playerId)
     savedHealth = json.decode(savedHealth)
+
 end)
