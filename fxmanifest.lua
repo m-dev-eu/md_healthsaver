@@ -7,7 +7,7 @@ author 'm-development.eu'
 name 'Healthsaver'
 description 'Saving Health and Armour to DB.'
 license 'GNU General Public License v3.0'
-version '0.0.0'
+version '0.1.0'
 
 dependencies {
     'oxmysql'
