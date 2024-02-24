@@ -42,7 +42,7 @@ jobs:
       - name: Bundle files
         run: |
           mkdir -p ./temp/md_healthsaver
-          cp ./{README.md,LICENSE,fxmanifest.lua,server.lua,client.lua} ./temp/md_healthsaver
+          cp ./{README.md,LICENSE,fxmanifest.lua,server.lua,client.lua,config.lua} ./temp/md_healthsaver
           cd ./temp && zip -r ../md_healthsaver.zip ./md_healthsaver
 
       - name: Create Release
