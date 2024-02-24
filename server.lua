@@ -26,7 +26,6 @@ AddEventHandler(Config.login, function (source)
     local savedHealth = MySQL.scalar.await('SELECT saved_health FROM users WHERE identifier = ?', {playerIdentifier})
     if not savedHealth or savedHealth == 'NaN' then return end
 
-    local playerPed = GetPlayerPed(playerId)
     savedHealth = json.decode(savedHealth)
-
+    TriggerClientEvent('md_healthsaver:load', playerId, savedHealth.health, savedHealth.armour)
 end)

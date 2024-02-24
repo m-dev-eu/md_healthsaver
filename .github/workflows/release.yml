@@ -51,7 +51,7 @@ jobs:
         with:
           repo_token: '${{ secrets.GITHUB_TOKEN  }}'
           title: '${{ env.RELEASE_VERSION }}'
-          prerelease: false
+          prerelease: true
           files: md_healthsaver.zip
 
         env:
